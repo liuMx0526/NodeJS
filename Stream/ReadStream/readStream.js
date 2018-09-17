@@ -2,7 +2,7 @@
 let fs = require('fs')
 let rs = fs.createReadStream('./readStream.txt', {
   flags: 'r', // 标识读取文件
-  // encoding: 'utf-8', // 字符编码, 默认为null
+  encoding: 'utf-8', // 字符编码, 默认为null
   autoClose: false, // 读取后自动关闭，默认为true
   // start: 0, // 开始读取位置，默认0
   end: 30, // 结束位置，默认文章读取完
